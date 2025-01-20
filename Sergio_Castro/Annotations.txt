@@ -1,0 +1,5 @@
+The following paper refers to fixed robotic arms. In this case, the robotic arm must be capable of categorizing different objects using Deep Reinforcement Learning (DeepRL), as referred to in the paper.
+
+The algorithm consists of two main components. The first is a pre-trained Convolutional Neural Network (CNN) that aids the algorithm in obtaining Q-values. These Q-values are utilized for Deep Q-Learning, which enables the system to learn from past experiences, using the CNN as a function approximator.
+
+The DeepRL algorithm is executed in two stages. The first stage involves the robotic arm collecting data by performing 1,000 random actions to populate the initial memory. The second stage consists of the training process, which occurs after each action is performed. Training is conducted using 128 tuples, each comprising the state, action, reward, and next state: <S_t, A_t, R_t, S_{t+1}>.
